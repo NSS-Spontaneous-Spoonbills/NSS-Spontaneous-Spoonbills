@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS Employee_Training;
 DROP TABLE IF EXISTS Product;
 DROP TABLE IF EXISTS Product_Type;
 DROP TABLE IF EXISTS Cust_Order;
-DROP TABLE IF EXISTS Cust_Ordered_Products;
+DROP TABLE IF EXISTS Ordered_Products;
 DROP TABLE IF EXISTS Payment_Options;
 DROP TABLE IF EXISTS Payment_Type;
 

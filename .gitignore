@@ -51,4 +51,4 @@ yarn-debug.log*
 yarn-error.log*
 scratch.*
 *venv/
-db.sqlite3-journal
+db.sqlite3-journa*
