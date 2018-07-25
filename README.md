@@ -5,6 +5,7 @@
 
 1. Clone the repo.
 
+
 **If you have not set up a virtual environment, do this stuff the first time you want to run this app:**
 
 2. From the command line cd into the project directory
@@ -33,6 +34,12 @@
 1. Open the database in DB Browser.
 2. Paste the "reset_database.sql" script into DB browser.
 3. Run the code to delete existing tables and recreate them.
+
+## To Migrate Models
+
+In root directory: 
+python manage.py makemigrations bangazonapi
+python manage.py migrate
 
 ## Database Requirements
 
