@@ -41,6 +41,13 @@ In root directory:
 python manage.py makemigrations bangazonapi
 python manage.py migrate
 
+## Admin Login
+1. Head to http://127.0.0.1:8000/admin/
+2. Login with:
+Username: admin
+password: password123
+3. Able to create objects for tables
+
 ## Database Requirements
 
 ### Employees
