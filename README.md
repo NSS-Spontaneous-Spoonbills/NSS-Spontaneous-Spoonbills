@@ -29,11 +29,10 @@
 
 ## To Reset the Database
 
-(These instructions are unfinished right now)
-
-1. Open the database in DB Browser.
-2. Paste the "reset_database.sql" script into DB browser.
-3. Run the code to delete existing tables and recreate them.
+1. Find the ```django.data.sh``` file in the root directory of this project.
+2. (Mac:) copy the file to ```usr/local/bin``` But please don't remove it from the project root because your Windows teammate needs it here.
+> Mac: not entirely sure how to run the script.
+> Windows: cd to the project root and run the following command: ```./django_data.sh bangazonapi faker_factory.py```
 
 ## To Migrate Models
 
