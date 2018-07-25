@@ -30,5 +30,11 @@
 
 (These instructions are unfinished right now)
 
-1. Open the database in DB Browser.
+**If you've never done this before**
+1. Start your virtual environment
+1. In a terminal window run the following command: ```pip install Faker```
 1. 
+
+
+1. Open the database in DB Browser.
+1. Paste the "reset_database.sql" script into DB browser.
