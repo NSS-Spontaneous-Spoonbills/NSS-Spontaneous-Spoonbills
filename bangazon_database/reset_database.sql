@@ -82,7 +82,7 @@ CREATE TABLE `Employee_Training` (
     `Emp_Train_ID` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     `Session_ID` INTEGER NOT NULL,
     `Employee_ID` INTEGER NOT NULL,
-    `Completed` INTEGER NOT NULL,
+    `Completed` BOOLEAN NOT NULL,
     FOREIGN KEY (Session_ID) REFERENCES Training_Program (Session_ID),
     FOREIGN KEY (Employee_ID) REFERENCES Employee (Employee_ID)
 );
