@@ -32,7 +32,8 @@
 1. Find the ```django.data.sh``` file in the root directory of this project.
 2. (Mac:) copy the file to ```usr/local/bin``` But please don't remove it from the project root because your Windows teammate needs it here.
 > Mac: not entirely sure how to run the script.
-> Windows: cd to the project root and run the following command: ```./django_data.sh bangazonapi faker_factory.py```
+> Windows: cd to the project root and run the following command: ```./django_data.sh bangazonapi faker_factory```
+**This will delete the entire database and reseed it with faked data. If you have an admin account you will need to recreate your superuser.**
 
 ## To Migrate Models
 
@@ -96,13 +97,13 @@ password: password123
 
 ### Training_Program
 
-* Program_ID
+* id
 * Program_Name
 * Program_Description
 
 ### Training_Program_Sessions
 
-* Session_ID
+* id
 * Program_ID (FK to Training_Program.Program_ID)
 * Program_Start_Date
 * Program_End_Date
@@ -110,7 +111,7 @@ password: password123
 
 ### User
 
-* User_ID
+* id
 * First_Name
 * Last_Name
 * Street
@@ -124,44 +125,45 @@ password: password123
 
 ### Employee
 
-* Employee_ID
+* id
 * First_Name
 * Last_Name
 * Dept_ID (FK to Department.Department_ID)
 * Comp_ID (FK to Computer.Comp_ID)
+* Is_Supervisor (bool; NOTE: right now with faker data, we may have situations where an a department may have multiple supervisors (or none). This will need to be fixed in a future iteration, probably by modifying the faker script.)
+
 * Employee_Is_Active
 
 ### Employment_Dates
 
-* Emp_Date_ID
+* id
 * Employee_ID (FK to Employee.Employee_ID)
 * Hire_Date (text in format MM/DD/YYYY)
 * Term_Date (text in format MM/DD/YYYY)
 
 ### Department
 
-* Department_ID
+* id
 * Dept_Name
-* Supervisor_ID (FK to Employee.Employee_ID)
 * Remaining_Budget (Integer. Need to place decimal before final two digits)
 
 ### Computer
 
-* Comp_ID
+* id
 * Comp_Name
 * Commission_Date (text in format MM/DD/YYYY)
 * Decommission_Date (text in format MM/DD/YYYY)
 
 ### Employee_Training
 
-* Emp_Train_ID
+* id
 * Session_ID (FK to Training_Program.Session_ID)
 * Employee_ID (FK to Employee.Employee_ID)
 * Completed (integer 0 or 1)
 
 ### Product
 
-* Product_ID
+* id
 * Type_ID (FK to Product_Types.Type_ID)
 * Seller_ID (FK to Users.User_ID)
 * Title
@@ -171,12 +173,12 @@ password: password123
 
 ### Product_Type
 
-* Type_ID
-* Type_Name
+* id
+* Product_Type_Name
 
 ### Cust_Order
 
-* Order_ID
+* id
 * Customer_ID (FK to User.User_ID)
 * Payment_ID (FK to Payment_Options.Payment_ID)
 * Order_Date (text in format MM/DD/YYYY)
@@ -184,19 +186,19 @@ password: password123
 
 ### Ordered_Products
 
-* Order_Products_ID
+* id
 * Order_ID (FK to Cust_Order.Order_ID)
 * Product_ID (FK to Product.Product_ID)
 * Quantity
 
 ### Payment_Options
 
-* Payment_ID
+* id
 * Customer_ID (FK to User.User_ID)
 * Payment_Type_ID (FK to Payment_Type.Payment_Type_ID)
 * Account_Num
 
 ### Payment_Type
 
-* Payment_Type_ID
+* id
 * Payment_Type_Name
