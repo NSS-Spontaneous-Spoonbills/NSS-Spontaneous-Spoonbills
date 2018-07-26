@@ -14,7 +14,7 @@
 ```deactivate```
 
 ## with pipenv:
-#### Run environment in projects roots directory
+#### *Run environment in projects roots directory
 ```pipenv shell```
 ``` pipenv django```
 ```pipenv djangorestframework```
