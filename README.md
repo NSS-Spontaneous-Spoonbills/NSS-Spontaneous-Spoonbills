@@ -42,11 +42,18 @@ python manage.py makemigrations bangazonapi
 python manage.py migrate
 
 ## Admin Login
+
 1. Head to http://127.0.0.1:8000/admin/
 2. Login with:
 Username: admin
 password: password123
 3. Able to create objects for tables
+
+## Creating A User with REST Framework Interface
+
+1. Head to http://127.0.0.1:8000/bangazonapi/user/
+1. Populate input fields with correlating data
+1. POST to the API
 
 ## Database Requirements
 
