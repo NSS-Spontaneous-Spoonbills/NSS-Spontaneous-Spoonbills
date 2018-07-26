@@ -4,7 +4,13 @@
 ## To Run This App
 
 1. Clone the repo.
-1. Start your virual machine
+1. Start your virtual machine
+1. Delete an previous migrations
+1. Re-migrate
+```
+python manage.py makemigrations bangazonapi
+python manage.py migrate
+```
 
 ## Setting up a Virtual Machine with virtualenv:
 
