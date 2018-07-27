@@ -1,13 +1,13 @@
-from rest_framework.viewsets import ModelViewSet
-from bangazonapi.serializers import Department_Serializer
+from rest_framework import viewsets
+from bangazonapi.serializers import DepartmentSerializer
 from bangazonapi.models import Department
 
-class Department_View(ModelViewSet):
+class Department_View(viewsets.ModelViewSet):
     """
     API endpoint that allows Departments to be viewed or edited.
     """
     queryset = Department.objects.all()
-    serializer_class = Department_Serializer
+    serializer_class = DepartmentSerializer
 
 
 

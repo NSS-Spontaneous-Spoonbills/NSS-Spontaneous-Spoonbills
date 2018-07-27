@@ -9,6 +9,9 @@ from .views import Cust_Order_View
 from .views import Employment_Dates_View
 from .views import Ordered_Products_View
 from .views import Payment_Options_View
+from .views import Employee_View
+from .views import Department_View
+from .views import Training_Program_View
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
@@ -20,4 +23,7 @@ router.register('cust_order', Cust_Order_View, base_name='cust_order')
 router.register('employment_dates', Employment_Dates_View,base_name='employment_dates')
 router.register('ordered_products', Ordered_Products_View, base_name='ordered_products')
 router.register('payment_options', Payment_Options_View, base_name='payment_options')
+router.register('employee', Employee_View,base_name='employee')
+router.register('department', Department_View, base_name='department')
+router.register('training_program', Training_Program_View, base_name='training_program')
 urlpatterns = router.urls
