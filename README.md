@@ -29,7 +29,7 @@
 
 ## To Reset the Database
 
-1. Find the ```django.data.sh``` file in the root directory of this project.
+1. Find the ```django_data.sh``` file in the root directory of this project.
 2. (Mac:) copy the file to ```usr/local/bin``` But please don't remove it from the project root because your Windows teammate needs it here.
 > Mac: not entirely sure how to run the script. Check [Joe's tutorial](https://github.com/nashville-software-school/bangazon-llc/blob/master/DB_RESET_SEED_SYSTEM.md).
 > Windows: cd to the project root and run the following command: ```./django_data.sh bangazonapi faker_factory```
