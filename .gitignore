@@ -52,3 +52,4 @@ yarn-error.log*
 scratch.*
 *venv/
 db.sqlite3-journa*
+Pip*
