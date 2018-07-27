@@ -8,3 +8,5 @@ class Employee_View(viewsets.ModelViewSet):
     """
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
+
+    http_method_names = ['get', 'post','put', 'head']
