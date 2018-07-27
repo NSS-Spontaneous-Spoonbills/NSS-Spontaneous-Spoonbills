@@ -36,8 +36,8 @@ CREATE TABLE `User` (
 	`Street`	TEXT,
 	`City`	TEXT,
 	`State`	TEXT,
-	`Zip`	NUMERIC,
-	`Phone`	TEXT,
+	`Zip`	INTEGER,
+	`Phone`	INTEGER,
 	`Email`	TEXT,
     `Date_Created` TEXT,
     `Last_Signon` TEXT
