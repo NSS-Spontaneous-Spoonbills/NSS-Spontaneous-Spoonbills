@@ -74,6 +74,9 @@ exit
 > Windows: cd to the project root and run the following command: ```./django_data.sh bangazonapi faker_factory```
 **This will delete the entire database and reseed it with faked data. If you have an admin account you will need to recreate your superuser.**
 
+(Optional)
+When faker_factory is complete, copy and paste the SQL script in ```/bangazon_database/dataCheck.sql``` in DB Browser to verify that every table got data.
+
 ## To Migrate Models
 
 In root directory: 
