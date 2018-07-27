@@ -9,15 +9,4 @@ class Department_View(viewsets.ModelViewSet):
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer
 
-
-
-
-
-#     from rest_framework.viewsets import ModelViewSet
-# from developers.models import Developers
-# from .serializers import DevSerializer
-
-
-# class DevViewSet(ModelViewSet):
-#     queryset = Developers.objects.all()
-#     serializer_class = DevSerializer
+    http_method_names = ['get', 'put', 'post', 'head']
