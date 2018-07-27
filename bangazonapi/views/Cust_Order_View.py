@@ -3,7 +3,7 @@ from bangazonapi.serializers import Cust_OrderSerializer
 from bangazonapi.models import Cust_Order
 
 
-class Cust_OrderViewSet(viewsets.ModelViewSet):
+class Cust_Order_View(viewsets.ModelViewSet):
     """
     API endpoint that allows Cust_Orders to be viewed or edited.
     """

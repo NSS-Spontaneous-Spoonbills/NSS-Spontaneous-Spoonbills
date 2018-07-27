@@ -3,7 +3,7 @@ from bangazonapi.serializers import Payment_OptionsSerializer
 from bangazonapi.models import Payment_Options
 
 
-class Payment_OptionsViewSet(viewsets.ModelViewSet):
+class Payment_Options_View(viewsets.ModelViewSet):
     """
     API endpoint that allows Payment_Options to be viewed or edited.
     """
