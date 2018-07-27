@@ -2,8 +2,8 @@ from .User_Serializer import UserSerializer
 
 from .Payment_Type_Serializer import Payment_TypeSerializer
 from .Product_Type_Serializer import Product_TypeSerializer
-from .Training_Program_Sessions_Serializer.py import Training_Program_SessionsSerialier
-from .Computer_Serializer import ComputerSerializer
+from .Training_Program_Sessions_Serializer import Training_Program_SessionsSerializer
+from .Computer_serializer import ComputerSerializer
 from .Cust_Order_Serializer import Cust_OrderSerializer
 from .Employment_Dates_Serializer import Employment_DatesSerializer
 from .Ordered_Products_Serializer import Ordered_ProductsSerializer

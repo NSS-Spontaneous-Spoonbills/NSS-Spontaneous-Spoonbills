@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from bangazonapi.serializers import Payment_TypeSerializer
 from bangazonapi.models import Payment_Type
 
-class Payment_TypeViewSet(viewsets.ModelViewSet):
+class Payment_Type_View(viewsets.ModelViewSet):
     """
     API endpoint that allows payment types to be viewed or edited.
     """

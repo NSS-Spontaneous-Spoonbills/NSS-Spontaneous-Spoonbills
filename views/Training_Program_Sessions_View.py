@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from bangazonapi.serializers import Training_Program_SessionsSerializer
 from bangazonapi.models import Training_Program_Sessions
 
-class Training_Program_SessionsViewSet(viewsets.ModelViewSet):
+class Training_Program_Sessions_View(viewsets.ModelViewSet):
     """
     API endpoint that allows training program sessions to be viewed or edited.
     """
