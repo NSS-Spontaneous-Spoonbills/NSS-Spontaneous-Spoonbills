@@ -248,8 +248,8 @@ password: password123
 ### Ordered_Products
 
 * id
-* Order_ID (FK to Cust_Order.Order_ID)
-* Product_ID (FK to Product.Product_ID)
+* Order_ID (FK to Cust_Order.Order_ID)Embedded order information
+* Product_ID (FK to Product.Product_ID)Embedded product information
 * Quantity
 
 ### Payment_Options
