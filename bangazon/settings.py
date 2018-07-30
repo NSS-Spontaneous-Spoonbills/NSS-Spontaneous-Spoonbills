@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'bangazonapi',
     'django_seed',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -56,6 +57,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'bangazon.urls'
@@ -78,6 +81,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bangazon.wsgi.application'
 
+
+CORS_ORIGIN_WHITELIST = (
+    'localhost:8000',
+    'bangazon.com',
+)
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
