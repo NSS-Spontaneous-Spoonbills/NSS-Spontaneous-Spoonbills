@@ -19,8 +19,11 @@ from bangazonapi.models import Employment_Dates
 
 
 class Command(BaseCommand):
+    """Allows command line integration for faker_factory.py"""
 
     def handle(self, *args, **options):
+        """Utilizes Faker to create mock data for the database, The arguments for most seeds are ([Model], [Number of records])."""
+
         # the number argument is the total num of rows you want created
 
         seeder.add_entity(Training_Program, 12)
