@@ -8,3 +8,5 @@ class User_View(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+    http_method_names = ['get', 'post', 'put', 'head']

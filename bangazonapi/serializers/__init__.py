@@ -1,4 +1,9 @@
 from .User_Serializer import UserSerializer
+
+from .Payment_Type_Serializer import Payment_TypeSerializer
+from .Product_Type_Serializer import Product_TypeSerializer
+from .Training_Program_Sessions_Serializer import Training_Program_SessionsSerializer
+from .Computer_serializer import ComputerSerializer
 from .Product_Serializer import ProductSerializer
 from .Employee_Training_Serializer import Employee_TrainingSerializer
 from .Cust_Order_Serializer import Cust_OrderSerializer
