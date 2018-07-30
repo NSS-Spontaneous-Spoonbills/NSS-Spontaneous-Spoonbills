@@ -32,7 +32,8 @@ Run environment in projects roots directory
 pipenv shell
 pipenv django
 pipenv djangorestframework
-pipenv django-seed 
+pipenv django-seed
+pipenv django-cors-headers
 ```
 
 ### To deactivate:
@@ -54,7 +55,7 @@ exit
 1. Run the following command: ```. Scripts/activate```
   * You will know the virtual environment is running when the command prompt is preceded with ```(bangazonvenv)```
 1. CD into the project root directory (should be a sibling of the bangazonvenv directory)
-1. Run the following command: ```pip install django djangorestframework django_seed```
+1. Run the following command: ```pip install django djangorestframework django_seed django-cors-headers```
 1. Run the following command: ```python manage.py runserver```
 1. Open a web browser and navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
@@ -79,7 +80,7 @@ When faker_factory is complete, copy and paste the SQL script in ```/bangazon_da
 
 ## To Migrate Models
 
-In root directory: 
+In root directory:
 
 ```shell
 python manage.py makemigrations bangazonapi
