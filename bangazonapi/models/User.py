@@ -16,4 +16,4 @@ class User(models.Model):
     Phone = models.CharField(max_length=10)
     Email = models.CharField(max_length=50)
     Date_Created = models.DateField(auto_now_add=True)
-    Last_Signon = models.DateField(auto_now=True)
+    Last_Signon = models.DateField()

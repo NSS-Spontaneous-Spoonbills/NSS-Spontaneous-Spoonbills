@@ -13,5 +13,4 @@ from .Payment_Options_Serializer import Payment_OptionsSerializer
 from .Employee_Serializer import EmployeeSerializer
 from .Department_Serializer import DepartmentSerializer
 from .Training_Program_Serializer import Training_ProgramSerializer
-
-
+from .Inactive_User_Serializer import Inactive_UserSerializer

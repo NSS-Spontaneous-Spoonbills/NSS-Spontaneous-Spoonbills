@@ -15,3 +15,4 @@ from .Training_Program_Sessions_View import Training_Program_Sessions_View
 from .Payment_Type_View import Payment_Type_View
 from .Product_Type_View import Product_Type_View
 from .Computer_View import Computer_View
+from .Inactive_Customer_View import Inactive_Customer_View
