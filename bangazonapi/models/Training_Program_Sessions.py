@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Training_Program_Sessions(models.Model):
+    """Models for sessions of employee training programs"""
     Program_ID = models.ForeignKey(
         'Training_Program', on_delete=models.CASCADE)
     Program_Start_Date = models.DateField()
