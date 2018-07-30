@@ -2,6 +2,11 @@ from django.db import models
 
 
 class User(models.Model):
+    """
+    User model that represents all the data we store about the buyers and sellers on Bangazon
+    Author: Jacob Smith
+
+    """
     First_Name = models.CharField(max_length=50)
     Last_Name = models.CharField(max_length=50)
     Street = models.CharField(max_length=100)

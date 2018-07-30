@@ -8,3 +8,4 @@ class Ordered_ProductsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         fields = ('id', 'Order_ID', 'Product_ID', 'Quantity')
         model = Ordered_Products
+        depth = 1
