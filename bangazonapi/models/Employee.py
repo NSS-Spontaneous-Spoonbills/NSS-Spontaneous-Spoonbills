@@ -1,5 +1,8 @@
 from django.db import models
-
+"""
+Employee model that represents data on employees.  Has foreign keys of Department and Computer.
+Author: Patrick Murphy
+"""
 
 class Employee(models.Model):
     First_Name = models.CharField(max_length=50)
