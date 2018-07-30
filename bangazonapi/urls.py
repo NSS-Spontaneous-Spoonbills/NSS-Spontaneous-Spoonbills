@@ -16,6 +16,7 @@ from .views import Payment_Options_View
 from .views import Employee_View
 from .views import Department_View
 from .views import Training_Program_View
+from .views import Inactive_Customer_View
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
@@ -39,4 +40,6 @@ router.register('employee', Employee_View, base_name='employee')
 router.register('department', Department_View, base_name='department')
 router.register('training_program', Training_Program_View,
                 base_name='training_program')
+router.register('inactive_customers', Inactive_Customer_View,
+                base_name='inactive_customers')
 urlpatterns = router.urls
